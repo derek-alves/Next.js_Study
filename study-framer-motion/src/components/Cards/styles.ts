@@ -1,27 +1,33 @@
 import styled from "styled-components";
+import {motion} from 'framer-motion';
 
-export const Container = styled.div`
+ export const Container = styled(motion.div)`
   height: 23rem;
   width: 25rem;
   margin: 2rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   border-radius: 3rem;
   background-color: white;
   max-width: 230px;
 
+a{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  text-decoration:none;
+}
   transition:background 0.2s;
   &:hover{
     background:rgba(255,255,255,0.1);
-    >img{
+    img{
       border-width:0.5rem;
       border-color:blue;
-      
     }
 
-    >span{
+    span{
       color:white;
     }
   }
@@ -49,3 +55,4 @@ export const Name = styled.span`
   font-weight: bold;
 
 `;
+
